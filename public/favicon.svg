@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Shield with detailed path -->
+  <path 
+    d="M50 5 
+       L90 20 
+       V45 
+       C90 65 
+       73 83 
+       50 95 
+       C27 83 
+       10 65 
+       10 45 
+       V20 
+       L50 5Z" 
+    fill="#FBBF24" 
+    stroke="#FBBF24" 
+    stroke-width="1"
+  />
+  
+  <!-- Original Lightning Bolt -->
+  <path 
+    d="M55 30 L35 50 L48 55 L45 70 L65 50 L52 45 L55 30Z" 
+    fill="#1E3A8A"
+    stroke="#1E3A8A"
+    stroke-width="0.5"
+  />
+
+  <!-- Shield outline for extra definition -->
+  <path 
+    d="M50 5 
+       L90 20 
+       V45 
+       C90 65 
+       73 83 
+       50 95 
+       C27 83 
+       10 65 
+       10 45 
+       V20 
+       L50 5Z" 
+    fill="none" 
+    stroke="#F59E0B" 
+    stroke-width="1"
+  />
+</svg>
