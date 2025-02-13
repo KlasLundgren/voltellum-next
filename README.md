@@ -1,7 +1,20 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+# Voltellum Website
 
+Official website for Voltellum - Power Fortified, Future Secured.
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/YOUR_USERNAME/voltellum-website.git
+
+2. Install dependecies
+cd voltellum-next
+npm install
+
+3. Getting Started
 First, run the development server:
 
 ```bash
