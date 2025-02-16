@@ -1,4 +1,4 @@
-// src/pages/HomePage.js
+// src/components/HomePage.js
 import React from 'react';
 import { Battery, Shield, TrendingUp, AlertTriangle, Sun, Building } from 'lucide-react';
 import { translations } from '../translations/translations';

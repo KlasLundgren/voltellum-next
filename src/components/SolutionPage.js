@@ -1,4 +1,4 @@
-// src/pages/SolutionPage.js
+// src/components/SolutionPage.js
 import React from 'react';
 import { Battery, Shield, TrendingUp, AlertTriangle, Sun, Building } from 'lucide-react';
 import { translations } from '../translations/translations';

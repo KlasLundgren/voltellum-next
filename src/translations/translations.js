@@ -27,7 +27,7 @@ export const translations = {
       title: "Our Solution",
       techSpecs: "Technical Specifications",
       benefits: "Benefits",
-      storage: "Advanced Energy Storage Systems",
+      storage: "Advanced Energy Storage",
       protection: "Military-Grade Protection",
       renewable: "Renewable Integration",
       revenue: "Revenue Generation in Peacetime",
