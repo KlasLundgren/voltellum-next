@@ -29,7 +29,7 @@ const SolutionPage = ({ language }) => {
   };
 
   return (
-    <div className="pt-20">
+    
       <div className="container mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold mb-12 text-gray-900">
           {language === 'sv' ? "Vår Lösning" : "Our Solution"}
@@ -111,7 +111,7 @@ const SolutionPage = ({ language }) => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 

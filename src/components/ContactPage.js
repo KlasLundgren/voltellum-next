@@ -68,7 +68,7 @@ const ContactPage = ({ language }) => {
   };
 
   return (
-    <div className="pt-20">
+    
       <div className="container mx-auto px-6 py-16">
         <div className="max-w-md mx-auto">
           <h1 className="text-4xl font-bold mb-8 text-center">{t.contact.title}</h1>
@@ -166,7 +166,7 @@ const ContactPage = ({ language }) => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 

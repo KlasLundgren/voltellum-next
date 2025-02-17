@@ -56,7 +56,6 @@ Together, we can power safety and resilience for communities everywhere.
     * Electrical engineer with experience developing battery electric vehicles.
 * **Rasmus Krook**, Co-founder
     * Serial entrepreneur. Founder of Occatio.
-
           `
         }
       ]
@@ -115,7 +114,6 @@ Tillsammans kan vi driva säkerhet och motståndskraft för samhällen överallt
     * Elektroingenjör med erfarenhet av att utveckla batteridrivna elfordon.
 * **Rasmus Krook**, Medgrundare
     * Serieentreprenör. Grundare av Occatio.
-
           `
         }
       ]

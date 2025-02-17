@@ -9,24 +9,24 @@ const HomePage = ({ language }) => {
   
   return (
     <div>
-      {/* Hero Section */}
-      <header className="relative text-white">
+      {/* Hero Section with Bigger Header */}
+      <header className="relative text-white min-h-screen">
         <div className="absolute inset-0">
           <img 
-            src="/pictures/setup.png" 
+            src="/pictures/power.jpg" 
             alt="Bunker background" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-blue-900 bg-opacity-80"></div>
+          <div className="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
         </div>
         
-        <div className="relative container mx-auto px-6 py-24">
-          <div className="flex flex-col items-center text-center pt-16">
-            <div className="flex items-center gap-4">
-              <Logo size={12} />
-              <h1 className="text-5xl font-bold text-blue-300">Voltellum</h1>
+        <div className="relative container mx-auto px-6 py-32">
+          <div className="flex flex-col items-center text-center pt-24">
+            <div className="flex items-center gap-6 mb-8">
+              <Logo size={20} />
+              <h1 className="text-7xl font-bold text-blue-300">Voltellum</h1>
             </div>
-            <p className="text-xl mb-8">{t.home.tagline}</p>
+            <p className="text-3xl mb-12 max-w-3xl mx-auto font-light">{t.home.tagline}</p>
           </div>
         </div>
       </header>
