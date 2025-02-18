@@ -92,7 +92,7 @@ const AboutPage = ({ language }) => {
             <div>
               <h3 className="text-xl font-bold mb-2">Klas Lundgren</h3>
               <p className="text-lg text-gray-700 pl-4">{t.founder}</p>
-              <p className="text-lg text-gray-600 pl-4">
+              <p className="text-lg text-gray-900 pl-4">
                 {language === 'sv' 
                   ? "Elektroingenjör med erfarenhet av att utveckla batterielektriska fordon."
                   : "Electrical engineer with experience developing battery electric vehicles."}
@@ -101,7 +101,7 @@ const AboutPage = ({ language }) => {
             <div>
               <h3 className="text-xl font-bold mb-2">Rasmus Krook</h3>
               <p className="text-lg text-gray-700 pl-4">{t.cofounder}</p>
-              <p className="text-lg text-gray-600 pl-4">
+              <p className="text-lg text-gray-900 pl-4">
                 {language === 'sv'
                   ? "Serieentreprenör. Grundare av Occatio."
                   : "Serial entrepreneur. Founder of Occatio."}

@@ -34,14 +34,14 @@ export default function Home() {
           <HomePage language={language} />
         </section>
 
-        {/* About Section */}
-        <section id="about" className="scroll-mt-20">
-          <AboutPage language={language} />
-        </section>
-
         {/* Solution Section */}
         <section id="solution" className="scroll-mt-20">
           <SolutionPage language={language} />
+        </section>
+
+        {/* About Section */}
+        <section id="about" className="scroll-mt-20">
+          <AboutPage language={language} />
         </section>
 
         {/* Contact Section */}

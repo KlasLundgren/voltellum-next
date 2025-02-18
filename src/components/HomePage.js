@@ -10,14 +10,20 @@ const HomePage = ({ language }) => {
   return (
     <div>
       {/* Hero Section */}
-      <header className="relative text-white min-h-screen">
-        <div className="container mx-auto px-6 py-32">
+      <header className="relative text-blue-900 min-h-screen bg-white">
+        <div className="container mx-auto px-6 py-16">
           <div className="flex flex-col items-center text-center pt-24">
-            <div className="flex items-center gap-6 mb-8">
-              <Logo size={20} />
-              <h1 className="text-7xl font-bold text-blue-300">Voltellum</h1>
-            </div>
-            <p className="text-3xl mb-12 max-w-3xl mx-auto font-light">{t.home.tagline}</p>
+            <img 
+              src="/pictures/name.png"   
+              alt="name" 
+              className="w-100 h-150"
+            />
+            <img 
+              src="/pictures/logo.png"   
+              alt="Logo" 
+              className="w-60 h-50"
+            />
+            <p className="text-3xl mb-12 max-w-3xl mx-auto font-light z-10">{t.home.tagline}</p>
           </div>
         </div>
       </header>

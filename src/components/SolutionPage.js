@@ -41,7 +41,7 @@ const SolutionPage = ({ language }) => {
                 {language === 'sv' ? "Krisberedskap" : "Emergency Preparedness"}
               </h2>
             </div>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               {language === 'sv' 
                 ? "I en värld av ökande osäkerhet behöver skyddsrum och beredskapsinrättningar pålitlig reservkraft för att skydda liv under långvariga strömavbrott. Voltellums modulära batterisystem, med storlekar från 60 till över 100 kWh, ger dagar av autonom kraft för viktiga system som ventilation, belysning och kommunikation, och ger människor livsviktigt skydd i kristider."
                 : "In a world of increasing uncertainty, air-raid shelters and emergency facilities need reliable backup power to protect lives during prolonged blackouts. Voltellum's modular battery systems, sized from 60 to over 100 kWh, provide days of autonomous power for essential systems like ventilation, lighting and communications, giving people vital refuge in times of crisis."}
@@ -56,12 +56,12 @@ const SolutionPage = ({ language }) => {
                 {language === 'sv' ? "Nätverksstöd" : "Grid Support"}
               </h2>
             </div>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-900 leading-relaxed mb-4">
               {language === 'sv'
                 ? "Voltellums batterier gör mer än att sitta overksamma i väntan på katastrofer. När de är anslutna till nätet tillhandahåller våra intelligenta system värdefulla tjänster som toppbelastningsutjämning, frekvensreglering, integration av förnybar energi och lokal mikronätsbildning under strömavbrott."
                 : "Voltellum's batteries do more than sit idle waiting for disasters. When connected to the grid, our intelligent systems provide valuable services like peak shaving, frequency regulation, renewable integration, and local microgrid formation during outages."}
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               {language === 'sv'
                 ? "Genom att delta i elmarknaderna får våra kunder en ny intäktsström samtidigt som de stödjer övergången till ett renare, mer distribuerat nät."
                 : "By participating in electricity markets, our customers gain a new revenue stream while supporting the transition to a cleaner, more distributed grid."}
@@ -96,7 +96,7 @@ const SolutionPage = ({ language }) => {
                 <div className="space-y-3">
                   {specs.doubleStandard.specs.map((spec, index) => (
                     <div key={index} className="flex justify-between border-b border-gray-200 pb-2">
-                      <span className="text-gray-600">{spec.label}</span>
+                      <span className="text-gray-900">{spec.label}</span>
                       <span className="font-medium text-gray-900">{spec.value}</span>
                     </div>
                   ))}
@@ -112,7 +112,7 @@ const SolutionPage = ({ language }) => {
                 <div className="space-y-3">
                   {specs.standard.specs.map((spec, index) => (
                     <div key={index} className="flex justify-between border-b border-gray-200 pb-2">
-                      <span className="text-gray-600">{spec.label}</span>
+                      <span className="text-gray-900">{spec.label}</span>
                       <span className="font-medium text-gray-900">{spec.value}</span>
                     </div>
                   ))}
