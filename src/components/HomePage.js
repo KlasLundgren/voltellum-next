@@ -9,18 +9,9 @@ const HomePage = ({ language }) => {
   
   return (
     <div>
-      {/* Hero Section with Bigger Header */}
+      {/* Hero Section */}
       <header className="relative text-white min-h-screen">
-        <div className="absolute inset-0">
-          <img 
-            src="/pictures/power.jpg" 
-            alt="Bunker background" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
-        </div>
-        
-        <div className="relative container mx-auto px-6 py-32">
+        <div className="container mx-auto px-6 py-32">
           <div className="flex flex-col items-center text-center pt-24">
             <div className="flex items-center gap-6 mb-8">
               <Logo size={20} />

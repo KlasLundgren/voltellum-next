@@ -1,11 +1,11 @@
 // src/components/SolutionPage.js
 import React from 'react';
-import { Battery, Shield, TrendingUp, AlertTriangle, Sun, Building, Zap, Power, BatteryPlus} from 'lucide-react';
+import { Battery, Shield, TrendingUp, AlertTriangle, Zap, Power, Tally2, Tally3 } from 'lucide-react';
 
 const SolutionPage = ({ language }) => {
   const specs = {
-    plusStandard: {
-      title: language === 'sv' ? "Standardsystem Plus" : "Standard System Plus",
+    doubleStandard: {
+      title: language === 'sv' ? "Standardsystem +" : "Standard System +",
       specs: [
         { label: language === 'sv' ? "Lagringskapacitet" : "Storage Capacity", value: "100 kWh" },
         { label: language === 'sv' ? "Nominell AC-spänning" : "Nominal AC Voltage", value: "230/400 VAC" },
@@ -29,19 +29,15 @@ const SolutionPage = ({ language }) => {
   };
 
   return (
-    
-      <div className="container mx-auto px-6 py-16">
-        <h1 className="text-4xl font-bold mb-12 text-gray-900">
-          {language === 'sv' ? "Vår Lösning" : "Our Solution"}
-        </h1>
-
-        {/* Main Features */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {/* Emergency Preparedness */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+    <div className="py-16 px-6">
+      <div className="container mx-auto space-y-12">
+        {/* Info Boxes */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Emergency Preparedness Box */}
+          <div className="bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-lg">
             <div className="flex items-center mb-4">
               <AlertTriangle className="h-8 w-8 text-red-600 mr-3" />
-              <h2 className="text-2xl font-bold text-gray-900">
+              <h2 className="text-2xl font-bold">
                 {language === 'sv' ? "Krisberedskap" : "Emergency Preparedness"}
               </h2>
             </div>
@@ -52,11 +48,11 @@ const SolutionPage = ({ language }) => {
             </p>
           </div>
 
-          {/* Grid Support */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
+          {/* Grid Support Box */}
+          <div className="bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-lg">
             <div className="flex items-center mb-4">
               <Zap className="h-8 w-8 text-blue-600 mr-3" />
-              <h2 className="text-2xl font-bold text-gray-900">
+              <h2 className="text-2xl font-bold">
                 {language === 'sv' ? "Nätverksstöd" : "Grid Support"}
               </h2>
             </div>
@@ -73,45 +69,60 @@ const SolutionPage = ({ language }) => {
           </div>
         </div>
 
-        {/* Technical Specifications */}
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">
-          {language === 'sv' ? "Tekniska Specifikationer" : "Technical Specifications"}
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Standard System Plus */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="flex items-center mb-6">
-              <Battery className="h-8 w-8 text-green-600 mr-3" />
-              <h3 className="text-xl font-bold text-gray-900">{specs.plusStandard.title}</h3>
+        {/* Technical Specifications Section */}
+        <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Left side - Image */}
+            <div className="relative h-full min-h-[400px] bg-gray-100">
+              <img 
+                src="/pictures/solution.png" 
+                alt="Technical system" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
-            <div className="space-y-4">
-              {specs.plusStandard.specs.map((spec, index) => (
-                <div key={index} className="flex justify-between border-b border-gray-100 pb-2">
-                  <span className="text-gray-600">{spec.label}</span>
-                  <span className="font-medium text-gray-900">{spec.value}</span>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          {/* Standard System */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="flex items-center mb-6">
-              <Battery className="h-8 w-8 text-blue-600 mr-3" />
-              <h3 className="text-xl font-bold text-gray-900">{specs.standard.title}</h3>
-            </div>
-            <div className="space-y-4">
-              {specs.standard.specs.map((spec, index) => (
-                <div key={index} className="flex justify-between border-b border-gray-100 pb-2">
-                  <span className="text-gray-600">{spec.label}</span>
-                  <span className="font-medium text-gray-900">{spec.value}</span>
+            {/* Right side - Specifications */}
+            <div className="p-8 md:p-12">
+              <h2 className="text-3xl font-bold mb-8 text-blue-900">
+                {language === 'sv' ? "Tekniska Specifikationer" : "Technical Specifications"}
+              </h2>
+
+              {/* Standard System + */}
+              <div className="mb-8">
+                <div className="flex items-center mb-4">
+                  <Tally3 className="h-6 w-6 text-blue-600 mr-2" />
+                  <h3 className="text-xl font-bold">{specs.doubleStandard.title}</h3>
                 </div>
-              ))}
+                <div className="space-y-3">
+                  {specs.doubleStandard.specs.map((spec, index) => (
+                    <div key={index} className="flex justify-between border-b border-gray-200 pb-2">
+                      <span className="text-gray-600">{spec.label}</span>
+                      <span className="font-medium text-gray-900">{spec.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Standard System */}
+              <div>
+                <div className="flex items-center mb-4">
+                  <Tally2 className="h-6 w-6 text-blue-600 mr-2" />
+                  <h3 className="text-xl font-bold">{specs.standard.title}</h3>
+                </div>
+                <div className="space-y-3">
+                  {specs.standard.specs.map((spec, index) => (
+                    <div key={index} className="flex justify-between border-b border-gray-200 pb-2">
+                      <span className="text-gray-600">{spec.label}</span>
+                      <span className="font-medium text-gray-900">{spec.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    
+    </div>
   );
 };
 
