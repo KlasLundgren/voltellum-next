@@ -37,7 +37,7 @@ const SolutionPage = ({ language }) => {
           <div className="bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-lg">
             <div className="flex items-center mb-4">
               <AlertTriangle className="h-8 w-8 text-red-600 mr-3" />
-              <h2 className="text-2xl font-bold">
+              <h2 className="text-2xl font-bold text-gray-900">
                 {language === 'sv' ? "Krisberedskap" : "Emergency Preparedness"}
               </h2>
             </div>
@@ -52,7 +52,7 @@ const SolutionPage = ({ language }) => {
           <div className="bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-lg">
             <div className="flex items-center mb-4">
               <Zap className="h-8 w-8 text-blue-600 mr-3" />
-              <h2 className="text-2xl font-bold">
+              <h2 className="text-2xl font-bold text-gray-900">
                 {language === 'sv' ? "Nätverksstöd" : "Grid Support"}
               </h2>
             </div>
@@ -91,7 +91,7 @@ const SolutionPage = ({ language }) => {
               <div className="mb-8">
                 <div className="flex items-center mb-4">
                   <Tally3 className="h-6 w-6 text-blue-600 mr-2" />
-                  <h3 className="text-xl font-bold">{specs.doubleStandard.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-900">{specs.doubleStandard.title}</h3>
                 </div>
                 <div className="space-y-3">
                   {specs.doubleStandard.specs.map((spec, index) => (
@@ -107,7 +107,7 @@ const SolutionPage = ({ language }) => {
               <div>
                 <div className="flex items-center mb-4">
                   <Tally2 className="h-6 w-6 text-blue-600 mr-2" />
-                  <h3 className="text-xl font-bold">{specs.standard.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-900">{specs.standard.title}</h3>
                 </div>
                 <div className="space-y-3">
                   {specs.standard.specs.map((spec, index) => (

@@ -63,34 +63,34 @@ const AboutPage = ({ language }) => {
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 lg:p-16">
           {/* About Section */}
           <h1 className="text-4xl font-bold mb-6 text-blue-900">{t.about}</h1>
-          <p className="text-lg mb-12">{t.mainText}</p>
+          <p className="text-lg mb-12 text-gray-900">{t.mainText}</p>
 
           {/* Story Section */}
           <h2 className="text-3xl font-bold mb-4 text-blue-900">{t.story}</h2>
-          <p className="text-lg mb-6">{t.storyText1}</p>
-          <p className="text-lg mb-6">{t.storyText2}</p>
-          <ol className="list-decimal list-inside text-lg mb-6 pl-4">
+          <p className="text-lg mb-6 text-gray-900">{t.storyText1}</p>
+          <p className="text-lg mb-6 text-gray-900">{t.storyText2}</p>
+          <ol className="list-decimal list-inside text-lg mb-6 pl-4 text-gray-900">
             {t.storyPoints.map((point, index) => (
               <li key={index} className="mb-2">{point}</li>
             ))}
           </ol>
-          <p className="text-lg mb-12">{t.storyConclusion}</p>
+          <p className="text-lg mb-12 text-gray-900">{t.storyConclusion}</p>
 
           {/* Impact Section */}
           <h2 className="text-3xl font-bold mb-4 text-blue-900">{t.impact}</h2>
-          <p className="text-lg mb-6">{t.impactText1}</p>
-          <p className="text-lg mb-12">{t.impactText2}</p>
+          <p className="text-lg mb-6 text-gray-900">{t.impactText1}</p>
+          <p className="text-lg mb-12 text-gray-900">{t.impactText2}</p>
 
           {/* Invitation Section */}
           <h2 className="text-3xl font-bold mb-4 text-blue-900">{t.invitation}</h2>
-          <p className="text-lg mb-6">{t.invitationText1}</p>
-          <p className="text-lg mb-12">{t.invitationText2}</p>
+          <p className="text-lg mb-6 text-gray-900">{t.invitationText1}</p>
+          <p className="text-lg mb-12 text-gray-900">{t.invitationText2}</p>
 
           {/* Team Section */}
           <h2 className="text-3xl font-bold mb-6 text-blue-900">{t.team}</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-bold mb-2">Klas Lundgren</h3>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">Klas Lundgren</h3>
               <p className="text-lg text-gray-700 pl-4">{t.founder}</p>
               <p className="text-lg text-gray-900 pl-4">
                 {language === 'sv' 
@@ -99,7 +99,7 @@ const AboutPage = ({ language }) => {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-2">Rasmus Krook</h3>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">Rasmus Krook</h3>
               <p className="text-lg text-gray-700 pl-4">{t.cofounder}</p>
               <p className="text-lg text-gray-900 pl-4">
                 {language === 'sv'

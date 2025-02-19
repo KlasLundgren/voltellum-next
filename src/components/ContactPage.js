@@ -78,14 +78,14 @@ const ContactPage = ({ language }) => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-blue-600" />
-                <a href="tel:+46730299784" className="text-lg hover:text-blue-600">
+                <a href="tel:+46730299784" className="text-lg text-gray-900 hover:text-blue-600">
                   +46 73 02 99 784
                 </a>
               </div>
               
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-blue-600" />
-                <a href="mailto:info@voltellum.com" className="text-lg hover:text-blue-600">
+                <a href="mailto:info@voltellum.com" className="text-lg text-gray-900 hover:text-blue-600">
                   info@voltellum.com
                 </a>
               </div>
