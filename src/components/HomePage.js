@@ -16,14 +16,14 @@ const HomePage = ({ language }) => {
             <img 
               src="/pictures/name.png"   
               alt="name" 
-              className="w-100 h-150"
+              className="w-100 h-150 mb-10"
             />
             <img 
               src="/pictures/logo.png"   
               alt="Logo" 
-              className="w-60 h-50"
+              className="w-60 h-50 mb-10"
             />
-            <p className="text-3xl mb-12 max-w-3xl mx-auto font-light z-10">{t.home.tagline}</p>
+            <p className="font-roboto text-4xl mb-12 max-w-3xl mx-auto z-10" style={{ color: '#0A4B7C' }}>{t.home.tagline}</p>
           </div>
         </div>
       </header>
@@ -35,7 +35,7 @@ const HomePage = ({ language }) => {
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <TrendingUp className="h-8 w-8 text-green-600 mr-3" />
-                <h2 className="text-2xl font-bold text-gray-900">{t.home.peacetime}</h2>
+                <h2 className="text-2xl font-inter text-gray-900">{t.home.peacetime}</h2>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start text-gray-900">
@@ -52,7 +52,7 @@ const HomePage = ({ language }) => {
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <AlertTriangle className="h-8 w-8 text-red-600 mr-3" />
-                <h2 className="text-2xl font-bold text-gray-900">{t.home.emergencyPreparedness}</h2>
+                <h2 className="font-inter text-2xl text-gray-900">{t.home.emergencyPreparedness}</h2>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start text-gray-900">
